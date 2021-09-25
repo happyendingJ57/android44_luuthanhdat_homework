@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+   android:id="@+id/layout_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_margin="10dp"
+        android:background="#07468C">
+
+        <ImageView
+            android:id="@+id/id_img_Food"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_facebook" />
+
+        <TextView
+            android:id="@+id/id_Ten_Food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_img_Food"
+            android:layout_centerHorizontal="true"
+            android:text="FaceBook"
+            android:textSize="15dp" />
+
+        <RatingBar
+            android:id="@+id/id_DanhGia_Food"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_Ten_Food"
+            android:layout_centerHorizontal="true"
+            android:rating="4"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_DanhGia_Food"
+            >
+
+            <TextView
+                android:id="@+id/id_DonVi_Tien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/id_GiaBan_Food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/id_DonVi_Tien"
+                android:text="12.3"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/id_btn_Add_Food"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/id_GiaBan_Food"
+                 android:src="@drawable/icon_add"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

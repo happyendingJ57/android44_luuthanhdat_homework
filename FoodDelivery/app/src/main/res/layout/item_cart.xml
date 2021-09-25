@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_cart"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/img_1" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_TenSp_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nut Toast"
+        android:layout_toRightOf="@+id/img_cart"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/id_dola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:layout_toRightOf="@id/img_cart"
+        android:layout_below="@id/tv_TenSp_cart"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/id_money_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12.34"
+        android:layout_below="@id/tv_TenSp_cart"
+        android:layout_toRightOf="@id/id_dola"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200g"
+        android:layout_toRightOf="@id/img_cart"
+        android:layout_below="@id/id_money_cart"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/btntru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/btntext"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="2dp"
+
+        />
+    <TextView
+        android:id="@+id/btntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@id/btncong"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="2dp"
+        />
+    <TextView
+        android:id="@+id/btncong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="2dp"
+        />
+
+</RelativeLayout>

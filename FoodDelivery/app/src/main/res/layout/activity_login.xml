@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgound_login"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guilinengang0.4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guilinengang0.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guilinengang0.6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guilinengang0.9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guilinengang0.8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guilinedoc0.05"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guilinedoc0.95"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guilinengang0.1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/guilinengang0.4"
+        app:layout_constraintEnd_toEndOf="@id/guilinedoc0.95"
+        app:layout_constraintStart_toStartOf="@id/guilinedoc0.05"
+        app:layout_constraintTop_toTopOf="@id/guilinengang0.1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Sign up with Social of fill the from to continue "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/logo_apple" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/logo_gmail" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/logo_facebook" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableLeft="@drawable/login"
+        android:hint="Name"
+        android:inputType="text"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/guilinengang0.5"
+        app:layout_constraintEnd_toEndOf="@id/guilinedoc0.95"
+        app:layout_constraintStart_toStartOf="@id/guilinedoc0.05"
+
+        app:layout_constraintTop_toTopOf="@id/guilinengang0.4" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawableLeft="@drawable/padlock"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/guilinengang0.6"
+        app:layout_constraintEnd_toEndOf="@id/guilinedoc0.95"
+        app:layout_constraintStart_toStartOf="@id/guilinedoc0.05"
+        app:layout_constraintTop_toTopOf="@id/guilinengang0.5" />
+
+    <Button
+        android:id="@+id/idbtnSignUp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/button_login"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/guilinengang0.9"
+        app:layout_constraintEnd_toEndOf="@id/guilinedoc0.95"
+        app:layout_constraintStart_toStartOf="@id/guilinedoc0.05"
+        app:layout_constraintTop_toTopOf="@id/guilinengang0.8" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guilinedoc0.95"
+        app:layout_constraintStart_toStartOf="@id/guilinedoc0.05"
+        app:layout_constraintTop_toTopOf="@id/guilinengang0.9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:text="By Singing up ,you agree to the Terms"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="of Service and Privacy"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

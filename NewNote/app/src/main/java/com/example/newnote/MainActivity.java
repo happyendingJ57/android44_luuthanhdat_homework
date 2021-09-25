@@ -19,6 +19,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     TextView btnCreateNewNote;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-    private void onFragment(Fragment fragment){
+//bo sung cho  onFragment o trong btnCreateNewNote
+    private void onFragment(Fragment fragment) {
         try {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragContainer,fragment)
+                    .replace(R.id.fragContainer, fragment)
                     .commit();
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
